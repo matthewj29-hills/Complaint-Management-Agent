@@ -28,10 +28,6 @@ This Complaint Management System provides a seamless experience for both custome
 ![Screenshot 2025-04-17 203616](https://github.com/user-attachments/assets/7c8865ae-0bca-4362-b1cb-1cbb1dd08ffe)
 
 ## Video Demonstration
-
-## Demo Video
-Click below to watch the demo video:
-
 [![Watch the video](https://img.youtube.com/vi/rYnnORK5wuM/0.jpg)](https://www.youtube.com/watch?v=rYnnORK5wuM)
 
 Click the image above to watch a full demonstration of the application in action.
