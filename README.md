@@ -29,7 +29,10 @@ This Complaint Management System provides a seamless experience for both custome
 
 ## Video Demonstration
 
-[[![Complaint Management System Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)](https://www.youtube.com/watch?v=rYnnORK5wuM)
+## Demo Video
+Click below to watch the demo video:
+
+[![Watch the video](https://img.youtube.com/vi/rYnnORK5wuM/0.jpg)](https://www.youtube.com/watch?v=rYnnORK5wuM)
 
 Click the image above to watch a full demonstration of the application in action.
 
