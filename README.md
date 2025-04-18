@@ -27,6 +27,14 @@ This Complaint Management System provides a seamless experience for both custome
 ### Admin Dashboard
 ![Screenshot 2025-04-17 203616](https://github.com/user-attachments/assets/7c8865ae-0bca-4362-b1cb-1cbb1dd08ffe)
 
+## Video Demonstration
+
+[[![Complaint Management System Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)](https://www.youtube.com/watch?v=rYnnORK5wuM)
+
+Click the image above to watch a full demonstration of the application in action.
+
+
+
 
 ## Setup and Installation Instructions
 
