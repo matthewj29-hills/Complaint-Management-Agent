@@ -17,15 +17,15 @@ This Complaint Management System provides a seamless experience for both custome
 ## Screenshots
 
 ### Landing Page
-!![Screenshot 2025-04-17 203121](https://github.com/user-attachments/assets/4b750900-8305-4e95-920c-0e50c0ff2e41)
+![Screenshot 2025-04-17 203121](https://github.com/user-attachments/assets/4b750900-8305-4e95-920c-0e50c0ff2e41)
 
 
 ### Complaint Submission Form
-!![Screenshot 2025-04-17 203314](https://github.com/user-attachments/assets/88c34942-1564-4b8e-84a0-1833cf1cf49c)
+![Screenshot 2025-04-17 203314](https://github.com/user-attachments/assets/88c34942-1564-4b8e-84a0-1833cf1cf49c)
 
 
 ### Admin Dashboard
-!![Screenshot 2025-04-17 203616](https://github.com/user-attachments/assets/7c8865ae-0bca-4362-b1cb-1cbb1dd08ffe)
+![Screenshot 2025-04-17 203616](https://github.com/user-attachments/assets/7c8865ae-0bca-4362-b1cb-1cbb1dd08ffe)
 
 
 ## Setup and Installation Instructions
