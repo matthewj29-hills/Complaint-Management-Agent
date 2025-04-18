@@ -10,6 +10,14 @@ A modern, full-stack application for managing customer complaints with a user-fr
 - **Styling**: Tailwind CSS
 - **Development Tools**: npm, Git
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or higher)
+- npm (comes with Node.js)
+- Git
+- A Supabase account (free tier is sufficient)
+
 ## Project Overview
 
 This Complaint Management System provides a seamless experience for both customers and administrators. Customers can easily submit complaints through an intuitive form, while administrators have a dedicated dashboard to manage and track these complaints. The system features real-time updates, responsive design, and a clean, modern interface.
@@ -37,7 +45,29 @@ Click the image above to watch a full demonstration of the application in action
 
 ## Setup and Installation Instructions
 
-1. Backend Setup:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/matthewj29-hills/Complaint-Management-Agent.git
+cd Complaint-Management-Agent
+```
+
+### 2. Supabase Setup
+1. Create a free account at [Supabase](https://supabase.com)
+2. Create a new project
+3. In your project settings, go to "Database" and create a new table with the following SQL:
+```sql
+create table complaints (
+  id uuid default uuid_generate_v4() primary key,
+  name text not null,
+  email text not null,
+  complaint text not null,
+  status text default 'Pending',
+  created_at timestamp with time zone default timezone('utc'::text, now())
+);
+```
+4. Note down your project URL and anon key from Project Settings > API
+
+### 3. Backend Setup
 ```bash
 # Navigate to the server directory
 cd server
@@ -46,19 +76,17 @@ cd server
 npm install
 
 # Create a .env file with your Supabase credentials
-# You can get these from your Supabase project settings
-touch .env
-# Add the following to your .env file:
-SUPABASE_URL=your_supabase_url
+# Replace the values with your actual Supabase credentials
+echo "SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
-PORT=3000
+PORT=3000" > .env
 
 # Start the backend server
 npm run dev
 ```
 
-2. Frontend Setup:
+### 4. Frontend Setup
 ```bash
 # Open a new terminal window
 # Navigate to the client directory
@@ -68,18 +96,27 @@ cd client
 npm install
 
 # Create a .env file
-touch .env
-# Add the following to your .env file:
-VITE_API_URL=http://localhost:3000
+# Replace the values with your actual Supabase credentials
+echo "VITE_API_URL=http://localhost:3000
 VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key" > .env
 
 # Start the frontend development server
 npm run dev
 ```
 
-3. Access the application at http://localhost:5173 (admin passcode: 0000)
-   - Note: You can change the admin passcode by modifying line 15 in `client/src/components/LandingPage.tsx`
+### 5. Access the Application
+- Open your browser and navigate to http://localhost:5173
+- Admin Dashboard: Use passcode "0000" to access the admin panel
+- Note: You can change the admin passcode by modifying line 15 in `client/src/components/LandingPage.tsx`
+
+## Troubleshooting
+
+If you encounter any issues:
+1. Ensure both backend and frontend servers are running
+2. Check that your Supabase credentials are correctly set in both .env files
+3. Verify that the Supabase table was created successfully
+4. Make sure you're using Node.js v18 or higher
 
 ## Assumptions and Tradeoffs
 
